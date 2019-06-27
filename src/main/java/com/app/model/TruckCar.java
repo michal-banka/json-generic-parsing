@@ -10,12 +10,12 @@ public class TruckCar extends Car {
 		this.mileage = mileage;
 	}
 
-	public void setMaxCapacity(Double maxCapacity) {
-		this.maxCapacity = maxCapacity;
+	public Double getMaxCapacity() {
+		return maxCapacity;
 	}
 
-	public void setMileage(Integer mileage) {
-		this.mileage = mileage;
+	public Integer getMileage() {
+		return mileage;
 	}
 
 	@Override

@@ -10,12 +10,12 @@ public class RaceCar extends Car {
 		this.seats = seats;
 	}
 
-	public void setMaxSpeed(Integer maxSpeed) {
-		this.maxSpeed = maxSpeed;
+	public Integer getMaxSpeed() {
+		return maxSpeed;
 	}
 
-	public void setSeats(Integer seats) {
-		this.seats = seats;
+	public Integer getSeats() {
+		return seats;
 	}
 
 	@Override

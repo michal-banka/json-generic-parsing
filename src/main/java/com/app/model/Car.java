@@ -9,10 +9,11 @@ import com.fasterxml.jackson.annotation.JsonTypeInfo;
 @JsonTypeInfo(use = JsonTypeInfo.Id.NAME)
 @JsonSubTypes({
 		@JsonSubTypes.Type(value = RaceCar.class, name = "raceCar"),
-		@JsonSubTypes.Type(value = TruckCar.class, name = "truckCar")
+		@JsonSubTypes.Type(value = TruckCar.class, name = "truckCar"),
+		@JsonSubTypes.Type(value = Car.class, name = "car")
 })
 
-public abstract class Car {
+public class Car {
 	String name;
 	Integer weight;
 	Boolean hasAirCondition;
@@ -27,16 +28,17 @@ public abstract class Car {
 	/**
 	 * setters are requiered to correct object to json generic converting
 	 * */
-	public void setName(String name) {
-		this.name = name;
+
+	public String getName() {
+		return name;
 	}
 
-	public void setWeight(Integer weight) {
-		this.weight = weight;
+	public Integer getWeight() {
+		return weight;
 	}
 
-	public void setHasAirCondition(Boolean hasAirCondition) {
-		this.hasAirCondition = hasAirCondition;
+	public Boolean getHasAirCondition() {
+		return hasAirCondition;
 	}
 
 	@Override

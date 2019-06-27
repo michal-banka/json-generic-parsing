@@ -30,7 +30,7 @@ public class CarController {
 	@GetMapping(value = "/fromJsonToObject")
 	public ResponseEntity<String> fromJsonToObject() throws IOException {
 		String carJson = "{\n" +
-				"    \"@type\": \"truckCar\",\n" +
+				"    \"@type\": \"car\",\n" +
 				"    \"name\": \"Volvo\",\n" +
 				"    \"weight\": 5570,\n" +
 				"    \"hasAirCondition\": true,\n" +
